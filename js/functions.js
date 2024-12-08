@@ -18,10 +18,10 @@ checkStringLength('12121', 6);
 isPalindrome('а роза упала на лапу азора');
 
 function isMeetingWithinWorkingHours(startOfWork, endOfWork, startOfMeeting, meetingDuration) {
-// Преобразуем входные строки в минуты для удобства сравнения
-const startOfWorkMinutes = convertTimeToMinutes(startOfWork);
-const endOfWorkMinutes = convertTimeToMinutes(endOfWork);
-const startOfMeetingMinutes = convertTimeToMinutes(startOfMeeting);
+  // Преобразуем входные строки в минуты для удобства сравнения
+  const startOfWorkMinutes = convertTimeToMinutes(startOfWork);
+  const endOfWorkMinutes = convertTimeToMinutes(endOfWork);
+  const startOfMeetingMinutes = convertTimeToMinutes(startOfMeeting);
 
   // Рассчитываем время окончания встречи
   const endOfMeetingMinutes = startOfMeetingMinutes + meetingDuration;
