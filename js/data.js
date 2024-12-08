@@ -7,6 +7,7 @@ const MAX_AVATAR_NUMBER = 1;
 const MIN_COMMENTS_COUNT = 0;
 const MAX_COMMENTS_COUNT = 30;
 
+
 export const authorNames = ['Иван', 'Анна', 'Петр', 'Мария', 'Алексей', 'Елена', 'Дмитрий', 'Ольга', 'Сергей', 'Наталья'];
 
 const commentsExamples = [

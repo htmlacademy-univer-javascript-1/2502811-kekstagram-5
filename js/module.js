@@ -1,6 +1,5 @@
-import { generatePhotoArray } from './data.js';
-import { openPicture } from './openbigPic.js';
-
+import {generatePhotoArray} from './data.js';
+import { openPicture } from './openBigPic.js';
 export const getRenderedCards = () => {
   const pictureTemplate = document
     .querySelector('#picture')
@@ -14,10 +13,10 @@ export const getRenderedCards = () => {
     picture.querySelector('img').alt = description;
     picture.querySelector('.picture__likes').textContent = likes;
     picture.querySelector('.picture__comments').textContent = comments.length;
+    picturesFragment.append(picture);
     picture.addEventListener('click', (evt) => {
       openPicture(evt, url, description, likes, comments);
     });
-    picturesFragment.append(picture);
   });
   picturesContainer.append(picturesFragment);
 };
