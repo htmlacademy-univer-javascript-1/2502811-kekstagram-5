@@ -1,5 +1,7 @@
 const commentTemplate = document.querySelector('.social__comment');
-const commentsLoader = document.querySelector('.comments-loader');
+document.querySelector('.social__comment-count').classList.add('hidden');
+document.querySelector('.comments-loader').classList.add('hidden');
+
 
 const onDocumentKeydown = (evt) => {
   if (evt.key === 'Escape') {
@@ -45,7 +47,6 @@ function closePicture(evt) {
   document.querySelector('.big-picture').classList.add('hidden');
   evt.target.removeEventListener('click', closePicture);
   document.removeEventListener('keydown', onDocumentKeydown);
-  commentsLoader.classList.remove('hidden');
 }
 
 export { openPicture };
